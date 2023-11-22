@@ -1,0 +1,49 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.btndown{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF6060;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 15px;
+}
+.btndown i{
+    color: white;
+}
+/* text drop */
+.droptext{
+    background-color: whitesmoke;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    height: 0;
+}
+.show{
+    width: 99.5%;
+    height: auto;
+    padding: 20px ;
+}
+/* rotation chevron */
+.chevronDropDown{
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-out;
+}
+.rotate{
+    transform: rotate(-180deg);
+    transition: transform 0.5s ease-in;
+}

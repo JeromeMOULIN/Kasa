@@ -1,6 +1,10 @@
 *{
+    /* reset */
     margin: 0;
     padding: 0;
+    /* font */
+    font-family: 'Montserrat';
+    color: #FF6060;
 }
 #root{
     display: flex;

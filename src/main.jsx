@@ -5,6 +5,8 @@ import '@/index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from '@/pages/public/Home'
+import About from './pages/public/about'
+import Error_pages from './pages/public/error_pages'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home/>
       },
+      {
+        path: "/about",
+        element: <About/>
+      },
+      {
+        path: "*",
+        element: <Error_pages/>
+      }
     ]
   }
 ])

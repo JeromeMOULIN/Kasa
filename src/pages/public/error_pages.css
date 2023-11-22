@@ -1,0 +1,12 @@
+.error_pages{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.error_pages > *{
+    margin: 3rem 0;
+}
+.error_pages h1{
+    font-size: 15rem;
+}
