@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header className='header'>
 
-            <Link className='navImg'>
+            <Link className='navImg'  to='/'>
                 <img src="src\_utils\LOGOkasa.png" alt="mer agitée sur falaise rocailleuse"/>
             </Link>
 

@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from '@/App.jsx'
-import '@/index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from '@/pages/public/Home'
 import About from './pages/public/about'
 import Error_pages from './pages/public/error_pages'
+import Logement from './pages/public/Logement'
+
+import '@/index.css'
 
 const router = createBrowserRouter([
   {
@@ -22,9 +24,14 @@ const router = createBrowserRouter([
         element: <About/>
       },
       {
+        path: `/logement/*`,
+        element: <Logement/>
+      },
+      {
         path: "*",
         element: <Error_pages/>
-      }
+      },
+      
     ]
   }
 ])
