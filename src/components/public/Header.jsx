@@ -9,7 +9,7 @@ const Header = () => {
         <header className='header'>
 
             <Link className='navImg'>
-                <img src="src\components\_utils\LOGOkasa.png" alt="mer agitée sur falaise rocailleuse"/>
+                <img src="src\_utils\LOGOkasa.png" alt="mer agitée sur falaise rocailleuse"/>
             </Link>
 
             <Navbar/>

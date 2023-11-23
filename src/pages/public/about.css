@@ -16,9 +16,9 @@
     display: flex;
     justify-content: space-between;
     background-color: #FF6060;
-    width: 100%;
     color: white;
     border: none;
+    width: 100%;
     border-radius: 5px;
     padding: 10px 20px 10px 15px;
 }
@@ -28,13 +28,13 @@
 /* text drop */
 .droptext{
     background-color: whitesmoke;
-    border-radius: 0 0 5px 5px;
     overflow: hidden;
+    border-radius: 0 0 5px 5px;
     height: 0;
 }
 .show{
-    width: 99.5%;
     height: auto;
+    width: 99.5%;
     padding: 20px ;
 }
 /* rotation chevron */
