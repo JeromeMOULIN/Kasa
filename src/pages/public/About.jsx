@@ -17,7 +17,7 @@ const About = () => {
 
         <div className='about'>
             <div className='heroHeader'>
-                <img src="src\_utils\fond_foret_montagne.svg" alt="" />
+                <img src="src/_utils/fond_foret_montagne.svg" alt="" />
             </div>
 
             <div className='dropdown'>

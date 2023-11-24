@@ -1,0 +1,63 @@
+.logement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+}
+.carousel{
+    position: relative;
+    width: 100%;
+    height: 415px;
+}
+.arrow{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    font-size: 5rem;
+    margin: 0 20px;
+    top: 50%;
+}
+.fa-chevron-left{
+    left: 0;
+}
+.fa-chevron-right{
+    right: 0;
+}
+.carousel img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.headerContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.tags{
+    display: flex;
+}
+.tags p{
+    background-color: #FF6060;
+    color: white;
+    border-radius: 20px;
+    margin: 10px 5px ;
+    padding: 5px 20px;
+}
+.host{
+    display: flex;
+    align-items: center;
+}
+.host img{
+    border-radius: 50% ;
+    height: 64px;
+    width: 64px;
+}

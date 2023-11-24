@@ -34,8 +34,9 @@
 }
 .show{
     height: auto;
+    transition: height 2s;
     width: 99.5%;
-    padding: 20px ;
+    padding: 20px;
 }
 /* rotation chevron */
 .chevronDropDown{

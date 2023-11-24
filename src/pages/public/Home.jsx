@@ -1,8 +1,8 @@
 import React from 'react';
-import Logements from '/back/logement.json'
+import Logements from '@back/logement.json'
+import { Link } from 'react-router-dom';
 
 import './home.css'
-import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -11,7 +11,7 @@ const Home = () => {
 
             {/* baniere */}
             <section className='heroHeader'>
-                <img src="src\_utils\fond_mer_rocheux.svg" alt="" />
+                <img src="src/_utils/fond_mer_rocheux.svg" alt="" />
                 <h1>Chez vous, partout et ailleurs</h1>
             </section>
 
