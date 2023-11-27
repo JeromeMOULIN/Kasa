@@ -25,7 +25,7 @@ const Logement = () => {
         setCurrentIndex(0)
     }, [])
 
-    
+
     const onLeft = () => {
         if (currentIndex <= 0) {
             setCurrentIndex(carousel.length - 1)
@@ -36,9 +36,9 @@ const Logement = () => {
     }
 
     const onRight = () => {
-        if(currentIndex >= carousel.length - 1){
+        if (currentIndex >= carousel.length - 1) {
             setCurrentIndex(0)
-        }else{
+        } else {
             setCurrentIndex(currentIndex + 1)
             console.log(currentIndex)
         }
