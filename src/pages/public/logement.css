@@ -5,6 +5,7 @@
     width: 100%;
     max-width: 1440px;
 }
+/* Carousel */
 .carousel{
     position: relative;
     width: 100%;
@@ -30,9 +31,11 @@
     height: 100%;
     border-radius: 20px;
 }
+/* Main */
 .mainContent{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 .headerContent{
@@ -60,4 +63,17 @@
     border-radius: 50% ;
     height: 64px;
     width: 64px;
+}
+/* dropdown */
+.dropInformation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+}
+.dropInformation .dropdown{
+    width: 45%;
+}
+.dropdown li{
+    list-style: none;
 }

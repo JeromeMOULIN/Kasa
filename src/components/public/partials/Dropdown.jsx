@@ -3,7 +3,6 @@ import React from 'react';
 import './dropdown.css'
 
 const Dropdown = (props) => {
-    console.log(props)
     //ouverture et fermeture des menu dropdown
     let openDropDown = (e) => {
         e.target.parentElement.parentElement.nextSibling.classList.toggle('show')

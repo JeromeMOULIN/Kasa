@@ -66,17 +66,16 @@ const Logement = () => {
                     </Dropdown>
                     <Dropdown title='Equipement'>
                         <ul className='droptext'>
-                            {   
+                            {
                                 equipments.map(equipment => {
                                     return (
-                                        <li>{equipment}</li>
+                                        <li key={equipment}>{equipment}</li>
                                     )
                                 })
                             }
                         </ul>
                     </Dropdown>
                 </div>
-
             </section>
         </div>
     );
