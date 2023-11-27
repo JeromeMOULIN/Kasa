@@ -3,12 +3,14 @@ import { useParams } from 'react-router-dom';
 import Logements from '@back/logement.json';
 
 import './logement.css';
+import Dropdown from '../../components/public/partials/Dropdown';
 
 const Logement = () => {
     const [logement, setLogement] = useState([])
     const [host, setHost] = useState([])
     const [carousel, setCarousel] = useState([])
     const [tags, setTags] = useState([])
+    const [equipments, setEquipements] = useState([])
 
     const { logementId } = useParams()
 
@@ -18,6 +20,7 @@ const Logement = () => {
         setHost(dataLogement.host)
         setCarousel(dataLogement.pictures)
         setTags(dataLogement.tags)
+        setEquipements(dataLogement.equipments)
     }, [])
 
     return (
@@ -56,7 +59,22 @@ const Logement = () => {
                 </div>
 
                 <div className='dropInformation'>
-
+                    <Dropdown title='Description'>
+                        <p className="droptext">
+                            {logement.description}
+                        </p>
+                    </Dropdown>
+                    <Dropdown title='Equipement'>
+                        <ul className='droptext'>
+                            {   
+                                equipments.map(equipment => {
+                                    return (
+                                        <li>{equipment}</li>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </Dropdown>
                 </div>
 
             </section>
