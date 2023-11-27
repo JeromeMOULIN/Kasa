@@ -4,7 +4,6 @@
     align-items: center;
     max-width: 1440px;
     width: 80%;
-    margin: 20px 0;
 }
 
 .btndown{
@@ -37,6 +36,7 @@
     transform: scaleY(1);
     transition: transform .3s ease-in;
     height: auto;
+    margin-bottom: 2rem ;
     width: 99.5%;
     padding: 20px;
 }
