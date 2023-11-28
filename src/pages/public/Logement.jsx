@@ -4,6 +4,7 @@ import Logements from '@back/logement.json';
 import Dropdown from '@components/public/partials/Dropdown';
 
 import './logement.css';
+import Star from '../../components/public/partials/star';
 
 const Logement = () => {
     const [logement, setLogement] = useState([])
@@ -73,7 +74,8 @@ const Logement = () => {
                                 <p>{host.name}</p>
                                 <img src={host.picture} alt={host.name} />
                             </div>
-                            {logement.rating}
+                            <Star nbrStar={logement.rating} />
+
                         </div>
                     </div>
                 </div>
