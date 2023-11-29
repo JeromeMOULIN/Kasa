@@ -10,13 +10,12 @@ const Carousel = (listCarousel) => {
     }, [])
 
     listCarousel = listCarousel.listCarousel
-    
+
     const onLeft = () => {
         if (currentIndex <= 0) {
             setCurrentIndex(listCarousel.length - 1)
         } else {
             setCurrentIndex(currentIndex - 1)
-            console.log(currentIndex)
         }
     }
 
@@ -25,16 +24,15 @@ const Carousel = (listCarousel) => {
             setCurrentIndex(0)
         } else {
             setCurrentIndex(currentIndex + 1)
-            console.log(currentIndex)
         }
     }
 
     return (
         <section className='carousel'>
-                <i onClick={onLeft} className="arrow fa-solid fa-chevron-left fa-2xl"></i>
-                <img className='imgcarousel' src={listCarousel[currentIndex]} alt="" />
-                <i onClick={onRight} className="arrow fa-solid fa-chevron-right fa-2xl"></i>
-            </section>
+            <i onClick={onLeft} className="arrow fa-solid fa-chevron-left fa-2xl"></i>
+            <img className='imgcarousel' src={listCarousel[currentIndex]} alt="x" />
+            <i onClick={onRight} className="arrow fa-solid fa-chevron-right fa-2xl"></i>
+        </section>
     );
 };
 

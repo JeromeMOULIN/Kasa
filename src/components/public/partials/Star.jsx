@@ -2,21 +2,26 @@ import React, { useEffect, useState } from 'react';
 
 import './star.css'
 
-const Star = (nbrStar) => {
-    const [star, setStar] = useState([])
+const Star = (nbrRating) => {
+    const [fullStar, setFullStar] = useState([])
     const [emptyStar, setEmptyStar] = useState([])
 
-    useEffect(() =>{
-        setStar(Array(2).fill(<i className="fa-solid fa-star"/>))
-        setEmptyStar(Array(3).fill(<i className="fa-solid fa-star grey"/>))
+    let FullStar = Array(5).fill(<i className="fa-solid fa-star" />).slice(5 - nbrRating.nbrRating)
+    let EmptyStar = Array(5).fill(<i className="fa-solid fa-star grey" />).slice(nbrRating.nbrRating)
+
+    useEffect(() => {
+        let i = nbrRating.nbrRating
+
+        setFullStar(Array(5).fill(<i key={2} className="fa-solid fa-star" />).slice(5 - nbrRating.nbrRating))
+        setEmptyStar(Array(5).fill(<i key={3} className="fa-solid fa-star grey" />).slice(nbrRating.nbrRating))
     }, [])
-    
+
     // <i className="fa-solid fa-star "/>
     // <i className="fa-solid fa-star grey"/>
 
     return (
         <div className='stars'>
-         {star}{emptyStar}
+            <p><span>{FullStar}</span><span>{EmptyStar}</span></p>
         </div>
     );
 };

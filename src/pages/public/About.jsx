@@ -1,13 +1,12 @@
 import React from 'react';
 
 import './about.css'
-import Dropdown from '../../components/public/partials/Dropdown';
+import Dropdown from '@components/public/partials/Dropdown';
 
 
 const About = () => {
 
     return (
-
 
         <div className='about'>
             <div className='heroHeader'>

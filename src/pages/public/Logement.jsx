@@ -54,7 +54,7 @@ const Logement = () => {
                                 <p>{host.name}</p>
                                 <img src={host.picture} alt={host.name} />
                             </div>
-                            <Star nbrStar={logement.rating} />
+                            <Star nbrRating={logement.rating} />
 
                         </div>
                     </div>
