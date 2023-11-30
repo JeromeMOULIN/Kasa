@@ -36,7 +36,7 @@ const Carousel = ({listCarousel}) => {
         <section className='carousel'>
             {leftArrow}
             <img className='imgcarousel' src={listCarousel[currentIndex]} alt="x" />
-            <div className='order'><span>{currentIndex +1}</span>/<span>{listCarousel.length}</span></div>
+            <p className='order'>{currentIndex +1}/{listCarousel.length}</p>
             {rightArrow}
         </section>
     );
