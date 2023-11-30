@@ -24,3 +24,13 @@
     height: 100%;
     border-radius: 20px;
 }
+.order{
+    position: absolute;
+    color: white;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%,-50%);
+}
+.order span{
+    color: white;
+}
