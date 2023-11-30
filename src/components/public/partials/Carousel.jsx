@@ -4,11 +4,15 @@ import './carousel.css'
 
 const Carousel = ({listCarousel}) => {
     const [currentIndex, setCurrentIndex] = useState([])
+    const [leftArrow, setLeftArrow] = useState([])
+    const [rightArrow, setRightArrow] = useState([])
+    
 
     useEffect(() => {
         setCurrentIndex(0)
-        if(listCarousel.length < 2){
-            
+        if(listCarousel.length > 1){
+            setLeftArrow(<i onClick={onLeft} className="arrow fa-solid fa-chevron-left fa-2xl"></i>)
+            setRightArrow(<i onClick={onRight} className="arrow fa-solid fa-chevron-right fa-2xl"></i>)
         }
     }, [])
 
@@ -30,10 +34,10 @@ const Carousel = ({listCarousel}) => {
 
     return (
         <section className='carousel'>
-            <i onClick={onLeft} className="arrow fa-solid fa-chevron-left fa-2xl"></i>
+            {leftArrow}
             <img className='imgcarousel' src={listCarousel[currentIndex]} alt="x" />
             <div className='order'><span>{currentIndex +1}</span>/<span>{listCarousel.length}</span></div>
-            <i onClick={onRight} className="arrow fa-solid fa-chevron-right fa-2xl"></i>
+            {rightArrow}
         </section>
     );
 };
