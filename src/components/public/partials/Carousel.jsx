@@ -32,7 +32,7 @@ const Carousel = ({listCarousel}) => {
         <section className='carousel'>
             <i onClick={onLeft} className="arrow fa-solid fa-chevron-left fa-2xl"></i>
             <img className='imgcarousel' src={listCarousel[currentIndex]} alt="x" />
-            <div className='order'><span>{currentIndex}</span>/<span>{listCarousel.length}</span></div>
+            <div className='order'><span>{currentIndex +1}</span>/<span>{listCarousel.length}</span></div>
             <i onClick={onRight} className="arrow fa-solid fa-chevron-right fa-2xl"></i>
         </section>
     );
