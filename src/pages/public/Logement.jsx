@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Logements from '@back/logement.json';
 import Dropdown from '@components/public/partials/Dropdown';
 import Star from '@components/public/partials/star';
@@ -16,16 +16,23 @@ const Logement = () => {
 
     const { logementId } = useParams()
 
+    const navigate = useNavigate();
+
     useEffect(() => {
         const dataLogement = Logements.find((logement) => logement.id == logementId)
+
+        if(!dataLogement){
+            navigate('/error')
+        }
+        
         setLogement(dataLogement)
         setHost(dataLogement.host)
         setCarousel(dataLogement.pictures)
         setTags(dataLogement.tags)
         setEquipements(dataLogement.equipments)
 
-    }, [])
 
+    }, [])
     return (
         <div className='logement'>
 

@@ -2,14 +2,12 @@ import React, { useEffect, useState } from 'react';
 
 import './carousel.css'
 
-const Carousel = (listCarousel) => {
+const Carousel = ({listCarousel}) => {
     const [currentIndex, setCurrentIndex] = useState([])
 
     useEffect(() => {
         setCurrentIndex(0)
     }, [])
-
-    listCarousel = listCarousel.listCarousel
 
     const onLeft = () => {
         if (currentIndex <= 0) {
