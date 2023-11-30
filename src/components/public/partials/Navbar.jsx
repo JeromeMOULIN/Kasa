@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import './navbar.css'
 
@@ -7,8 +7,8 @@ const Navbar = () => {
     return (
         <nav className='nav'>
             <ul>
-                <li><Link to='/'>Acceuil</Link></li>
-                <li><Link to='/about'>A Propos</Link></li>
+                <li><NavLink to='/'>Acceuil</NavLink></li>
+                <li><NavLink to='/about'>A Propos</NavLink></li>
             </ul>
         </nav>
     );

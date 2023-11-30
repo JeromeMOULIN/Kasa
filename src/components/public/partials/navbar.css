@@ -9,3 +9,6 @@ nav ul li a{
     color: #FF6060;
     font-size: 24px;
 }
+.active{
+    text-decoration: underline;
+}
