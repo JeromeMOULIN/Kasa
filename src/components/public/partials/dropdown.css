@@ -50,3 +50,11 @@
     transform: rotate(-180deg);
     transition: transform 0.3s ease-in;
 }
+@media (max-width: 500px) {
+    .dropdown, .btndown{
+        width: 95%;
+    }
+    .droptext{
+        width: 93%;
+    }
+}

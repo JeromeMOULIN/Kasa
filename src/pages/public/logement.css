@@ -63,3 +63,9 @@
 .dropdown li{
     list-style: none;
 }
+@media (max-width: 1440px) {
+    .logement{
+        width: 95%;
+    }
+    
+}

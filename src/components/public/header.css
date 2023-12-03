@@ -8,3 +8,18 @@ header{
     padding: 20px 0;
 
 }
+.navImg img{
+   width: 210.32px; 
+}
+@media (max-width: 1440px) {
+    .header{
+        width: 95%;
+    }
+    
+}
+@media (max-width: 500px) {
+    .navImg img{
+        width: 145px;
+    }
+    
+}

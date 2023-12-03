@@ -14,3 +14,10 @@ footer p{
 footer img{
     max-width: 122px;
 }
+@media (max-width: 500px) {
+    footer p{
+        text-align: center;
+        width: 175px;
+    }
+    
+}

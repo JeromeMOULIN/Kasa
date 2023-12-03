@@ -12,3 +12,9 @@ nav ul li a{
 .active{
     text-decoration: underline;
 }
+@media (max-width: 500px) {
+    nav ul li a{
+        font-size: 12px;
+    }
+    
+}
