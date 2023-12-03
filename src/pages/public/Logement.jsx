@@ -8,6 +8,7 @@ import Carousel from '@components/public/partials/Carousel';
 import './logement.css';
 
 const Logement = () => {
+    //setting des differents State
     const [logement, setLogement] = useState([])
     const [host, setHost] = useState([])
     const [carousel, setCarousel] = useState([])
@@ -20,7 +21,7 @@ const Logement = () => {
 
     useEffect(() => {
         const dataLogement = Logements.find((logement) => logement.id == logementId)
-
+        // si l'id du logement n'est pas connu alors renovi a la page error
         if(!dataLogement){
             navigate('/error')
         }

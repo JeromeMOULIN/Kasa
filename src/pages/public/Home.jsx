@@ -9,13 +9,13 @@ const Home = () => {
     return (
         <div className='home'>
 
-            {/* baniere */}
+            
             <section className='heroHeader'>
                 <img src="src/_utils/fond_mer_rocheux.svg" alt="" />
                 <h1>Chez vous, partout et ailleurs</h1>
             </section>
 
-            {/* content logement */}
+            
             <section className='logements'>
                     {
                         Logements.map(logement => {
