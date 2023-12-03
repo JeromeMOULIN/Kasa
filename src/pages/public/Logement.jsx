@@ -55,7 +55,7 @@ const Logement = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className='whoContent'>
                         <div className='Who'>
                             <div className='host'>
                                 <p>{host.name}</p>
